@@ -3,7 +3,7 @@ SynthFramework
 SynthFramework is a Wavetable Synthesizer capable of producing a variety of sounds with oscillators and effects. This is a personal project written in C++ and using the JUCE audio framework, for the purposes of development practice and to continue developing in the future with an expanded featureset (and new name).
 
 In its current state, the application does not compile because the User Interface is incomplete. Prior to UI development, the application was in working condition with the following featureset:
-- Arbitrary number of oscillators at a time; resizes data structures dynamically
+- Arbitrary number of oscillators at a time; resizes data structures dynamically upon add or removal of oscillators
 - Able to produce sound from any valid wavetable (currently only hardcoded with a sine wave for testing purposes)
 - ADSR gain envelope functionality (with plans to implement individual envelopes for each oscillator)
 - Monophonic or polyphonic (designed to handle note stealing with minimal space-complexity)
