@@ -1,6 +1,6 @@
 SynthFramework
 
-This is a personal project written in C++ and using the JUCE audio framework, for the purposes of development practice and to continue developing in the future with an expanded featureset.
+SynthFramework is a Wavetable Synthesizer capable of producing a variety of sounds with oscillators and effects. This is a personal project written in C++ and using the JUCE audio framework, for the purposes of development practice and to continue developing in the future with an expanded featureset (and new name).
 
 In its current state, the application does not compile because the User Interface is incomplete. Prior to UI development, the application was in working condition with the following featureset:
 - Arbitrary number of oscillators at a time; resizes data structures dynamically
@@ -8,8 +8,7 @@ In its current state, the application does not compile because the User Interfac
 - ADSR gain envelope functionality (with plans to implement individual envelopes for each oscillator)
 - Monophonic or polyphonic (designed to handle note stealing with minimal space-complexity)
 
-The most important files of the project, that most showcase my development skills and practices, are WavetableOscillator.h, WavetableOscillatorManager.h, and SynthVoice.h, which handle the production of sound given the current parameters of the program. These parameters are stored in a central "ValueTree", a data structure similar to XML format, and relevant classes extend listeners so they may automatically update when parameters are changed and translate these changes into changes in the sound produced.
-
+The most important files of the project, that most showcase my development skills and practices, are WavetableOscillator.h, WavetableOscillatorManager.h, and SynthVoice.h, which handle the production of sound given the current parameters of the program. These parameters are stored in a central "ValueTree", a data structure similar to XML format, and relevant classes extend listeners so they may automatically update when parameters are changed and translate these changes into changes in the sound produced. It is worth noting that the header-only convention of much of the project is due to that convention being used for much of the JUCE framework, and separate cpp files not being necessary to accomplish the goals of the project.
 
 Future development plans:
 - 'Noise' knob for each osillator, which interpolates between the selected wavetable (0) and white noise (1). The goal of this is to be able to add any amount of grain and texture to a produced sound while retaining its original tonal qualities.
