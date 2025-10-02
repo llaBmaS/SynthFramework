@@ -1,5 +1,9 @@
 SynthFramework
 
+Edit Oct 2025: This was an overambitious college project marred by scope creep and inexperience with synthesis and audio development lol. I was trying to make an advanced semi-modular synth by myself without having used ones like PhasePlant before. The note-stealing alone took me dozens of hours to get working in such a way that excess voices only existed long enough to handle the transition between notes before being deleted in memory, and didn't cause pops or clicks in the process, which was ostensibly a way to make it more elegant and performant but I never tested performance anyways and it complicated things so much that I ultimately i gave up before fixing/finishing the UI so that it could compile. Fun attempt though!
+
+Old Description from when I was trying to flaunt this to potential employers:
+
 SynthFramework is a Wavetable Synthesizer capable of producing a variety of sounds with oscillators and effects. This is a personal project written in C++ and using the JUCE audio framework, for the purposes of development practice and to continue developing in the future with an expanded featureset (and new name).
 
 In its current state, the application does not compile because the User Interface is incomplete. Prior to UI development, the application was in working condition with the following featureset:
